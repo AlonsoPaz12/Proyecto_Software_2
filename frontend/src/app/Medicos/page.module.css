@@ -1,0 +1,10 @@
+.VistaMedicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.Titulo {
+  text-align: center;
+}

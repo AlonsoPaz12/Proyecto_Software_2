@@ -1,0 +1,124 @@
+{
+    "doctores": [
+        {
+            "doc_id": 1,
+            "nombre": "Dr. Lee S. Williamson",
+            "especialidad": "Cardiología",
+            "imagen": "https://i.ibb.co/b6SDFTN/01.jpg"
+        },
+        {
+            "doc_id": 2,
+            "nombre": "Dr. Greg S. Grinstead",
+            "especialidad": "Neurología",
+            "imagen": "https://i.ibb.co/gW26qY2/02.jpg"
+        },
+        {
+            "doc_id": 3,
+            "nombre": "Dr. Roger K. Jackson",
+            "especialidad": "Ortopedia",
+            "imagen": "https://i.ibb.co/hsyxYVj/03.jpg"
+        },
+        {
+            "doc_id": 4,
+            "nombre": "Dr. Frank T. Grimsley",
+            "especialidad": "Neurología",
+            "imagen": "https://i.ibb.co/86xBJSh/04.jpg"
+        },
+        {
+            "doc_id": 5,
+            "nombre": "Dr. Rudolph V. Spitler",
+            "especialidad": "Cardiología",
+            "imagen": "https://i.ibb.co/hWD7NVx/05.jpg"
+        },
+        {
+            "doc_id": 6,
+            "nombre": "Dr. Erik R. Faulkner",
+            "especialidad": "Cardiología",
+            "imagen": "https://i.ibb.co/hYWtLy1/06.jpg"
+        },
+        {
+            "doc_id": 7,
+            "nombre": "Dr. Phillip L. Williams",
+            "especialidad": "Neurología",
+            "imagen": "https://i.ibb.co/dPtTnys/07.jpg"
+        },
+        {
+            "doc_id": 8,
+            "nombre": "Dr. Johnny R. Atterberry",
+            "especialidad": "Ortopedia",
+            "imagen": "https://i.ibb.co/ypmBR9k/08.jpg"
+        },
+        {
+            "doc_id": 9,
+            "nombre": "Dr. Michael I. Johnson",
+            "especialidad": "Medicina",
+            "imagen": "https://i.ibb.co/nj8qcCS/09.jpg"
+        },
+        {
+            "doc_id": 10,
+            "nombre": "Dra. Carmen S. García",
+            "especialidad": "Ginecología",
+            "imagen": "https://i.ibb.co/QPqtv8c/10.jpg"
+        },
+        {
+            "doc_id": 11,
+            "nombre": "Dr. Juan M. López",
+            "especialidad": "Cirugía General",
+            "imagen": "https://i.ibb.co/b5G4GkM/11.jpg"
+        },
+        {
+            "doc_id": 12,
+            "nombre": "Dra. Ana P. Rodríguez",
+            "especialidad": "Pediatría",
+            "imagen": "https://i.ibb.co/VjWxLx2/12.jpg"
+        },
+        {
+            "doc_id": 13,
+            "nombre": "Dr. Pablo A. Martínez",
+            "especialidad": "Dermatología",
+            "imagen": "https://i.ibb.co/qF2NzZL/13.jpg"
+        },
+        {
+            "doc_id": 14,
+            "nombre": "Dra. Laura E. Sánchez",
+            "especialidad": "Endocrinología",
+            "imagen": "https://i.ibb.co/9tf1J0W/14.jpg"
+        },
+        {
+            "doc_id": 15,
+            "nombre": "Dr. Carlos R. Pérez",
+            "especialidad": "Oftalmología",
+            "imagen": "https://i.ibb.co/BzY6Lj6/15.jpg"
+        },
+        {
+            "doc_id": 16,
+            "nombre": "Dra. María L. Gómez",
+            "especialidad": "Psiquiatría",
+            "imagen": "https://i.ibb.co/gZrbfRS/16.jpg"
+        },
+        {
+            "doc_id": 17,
+            "nombre": "Dr. Luis F. Torres",
+            "especialidad": "Cirugía Plástica",
+            "imagen": "https://i.ibb.co/QvDvMkd/17.jpg"
+        },
+        {
+            "doc_id": 18,
+            "nombre": "Dra. Patricia N. Hernández",
+            "especialidad": "Oncología",
+            "imagen": "https://i.ibb.co/Y8TfFbC/18.jpg"
+        },
+        {
+            "doc_id": 19,
+            "nombre": "Dr. Javier M. Reyes",
+            "especialidad": "Urología",
+            "imagen": "https://i.ibb.co/qySQ63V/19.jpg"
+        },
+        {
+            "doc_id": 20,
+            "nombre": "Dra. Sonia G. Ramírez",
+            "especialidad": "Medicina Interna",
+            "imagen": "https://i.ibb.co/YDmJxtv/20.jpg"
+        }
+    ]
+}
