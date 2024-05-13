@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import TopBar from '@/components/TopBar/TopBar';
+import TopBar from '@/components/TopBarMovil/TopBar';
 import BottomBar from '@/components/BottomBar/BottomBar';
 import styles from './page.module.css';
 

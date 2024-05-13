@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import TopBar from '@/components/TopBar/TopBar.jsx';
 import DoctorCard from '../../components/DoctorCard/DoctorCard.jsx';
 import SearchBar from '../../components/BuscadorFiltro/BuscadorFiltro.jsx';
 import styles from './page.module.css';
@@ -8,6 +9,11 @@ const VerMedicos = () => {
   
   const doctores = [
     { id: 1, nombre: 'Dr. Juan Pérez', especialidad: 'Pediatría', imagen:'https://i.ibb.co/b6SDFTN/01.jpg'},
+    { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
+    { id: 3, nombre: 'Dra. Andre Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
+    { id: 1, nombre: 'Dr. Juan Pérez', especialidad: 'Pediatría', imagen:'https://i.ibb.co/b6SDFTN/01.jpg'},
+    { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
+    { id: 3, nombre: 'Dra. Andre Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
     { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
     { id: 3, nombre: 'Dra. Andre Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
     // Agrega más doctores según sea necesario
@@ -25,7 +31,8 @@ const VerMedicos = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
+      <TopBar></TopBar>
       <h1 className={styles.Titulo}>Todos los Doctores</h1>
       <SearchBar placeholder="Buscar por nombre o especialidad" onSearch={handleSearch} />
       <div className={styles.VistaMedicos}>  
