@@ -1,13 +1,15 @@
 .container{
   background-color: #E7F6F1;
 }
-.VistaMedicos {
+
+.vistaMedicos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
 }
 
-.Titulo {
-  text-align: center;
+.texto{
+  display: flex;
+  
 }

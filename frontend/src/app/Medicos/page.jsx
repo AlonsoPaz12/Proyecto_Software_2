@@ -2,44 +2,34 @@
 import React, { useState } from 'react';
 import TopBar from '@/components/TopBar/TopBar.jsx';
 import DoctorCard from '../../components/DoctorCard/DoctorCard.jsx';
-import SearchBar from '../../components/BuscadorFiltro/BuscadorFiltro.jsx';
 import styles from './page.module.css';
+import Banner from '@/components/Banner/Banner.jsx';
 
 const VerMedicos = () => {
   
-  const doctores = [
+  const doctors = [
     { id: 1, nombre: 'Dr. Juan Pérez', especialidad: 'Pediatría', imagen:'https://i.ibb.co/b6SDFTN/01.jpg'},
     { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    { id: 3, nombre: 'Dra. Andre Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    { id: 1, nombre: 'Dr. Juan Pérez', especialidad: 'Pediatría', imagen:'https://i.ibb.co/b6SDFTN/01.jpg'},
-    { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    { id: 3, nombre: 'Dra. Andre Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    { id: 3, nombre: 'Dra. Andre Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
+    { id: 3, nombre: 'Dra. Gianella Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
     // Agrega más doctores según sea necesario
   ];
 
-  const [filteredDoctors, setFilteredDoctors] = useState(doctores);
-
-  const handleSearch = (searchTerm) => {
-    const filtered = doctores.filter(
-      (doctor) =>
-        doctor.nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchTerm.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")) ||
-        doctor.especialidad.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchTerm.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
-    );
-    setFilteredDoctors(filtered);
-  };
+  const [filteredDoctors, setFilteredDoctors] = useState(doctors);
 
   return (
     <div className={styles.container}>
+      
       <TopBar></TopBar>
-      <h1 className={styles.Titulo}>Todos los Doctores</h1>
-      <SearchBar placeholder="Buscar por nombre o especialidad" onSearch={handleSearch} />
-      <div className={styles.VistaMedicos}>  
+      <Banner pageTitle="NUESTROS MÉDICOS" parrafo="Contamos con los mejores profesionales para
+            cuidar de ti y tu familia. ¡Agenda una cita hoy
+            mismo!"></Banner>
+
+      <div className={styles.vistaMedicos}>  
         {filteredDoctors.map(doctor => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}
       </div>
+
     </div>
   );
 };
