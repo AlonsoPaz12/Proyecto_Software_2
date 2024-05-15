@@ -1,13 +1,10 @@
-'use client';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './TopBar.module.css';
-import { FaUser } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaUser, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const TopBar = () => {
  return (
@@ -15,7 +12,7 @@ const TopBar = () => {
     <Container className={`d-none d-md-flex justify-content-between align-items-center ${styles.topBarContactInfo}`}>
       <div>
         <span className={styles.contactInfoItem}><FaPhoneAlt /> Teléfono: (123) 456-7890</span>
-        <span className={styles.contactInfoItem}><FaMapMarkerAlt /> Dirección: 123 Calle Principal</span>
+        <span className={styles.contactInfoItem}><FaMapMarkerAlt /> Dirección: Avenida Principal 123, Lima, Perú</span>
       </div> 
       <div><FaUser /> MI CLINICA ONLINE</div>
     </Container>

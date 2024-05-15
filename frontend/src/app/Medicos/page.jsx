@@ -24,7 +24,7 @@ const VerMedicos = () => {
       
       <Banner pageTitle="NUESTROS MÉDICOS" parrafo="Contamos con los mejores profesionales para
       cuidar de ti y tu familia. ¡Agenda una cita hoy
-      mismo!" imagen="/img/doctores2.png"></Banner>
+      mismo!" imagen="/img/doctores2.png"/>
 
       <div className={styles.vistaMedicos}>  
         {filteredDoctors.map(doctor => (
