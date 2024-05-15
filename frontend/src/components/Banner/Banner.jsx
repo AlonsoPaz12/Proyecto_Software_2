@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Banner.module.css';
 
-const Banner = ({pageTitle, parrafo}) => {
+const Banner = ({pageTitle, parrafo, imagen}) => {
   return (
     <div className={styles.banner}>
 
@@ -12,7 +12,7 @@ const Banner = ({pageTitle, parrafo}) => {
 
         <img
           alt=""
-          src="/img/doctores2.png"
+          src={imagen}
           className={styles.image}
         />
         

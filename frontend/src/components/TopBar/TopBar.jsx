@@ -56,7 +56,7 @@ const TopBar = () => {
               <Nav.Link href="#action2">Especialidades</Nav.Link>
               <Nav.Link href="#action3">Médicos</Nav.Link>
             </Nav>
-            <Button variant="light" className="rounded-5">Agendar cita</Button> 
+            <Button variant="light" className="d-none d-md-flex rounded-5">Agendar cita</Button> 
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
