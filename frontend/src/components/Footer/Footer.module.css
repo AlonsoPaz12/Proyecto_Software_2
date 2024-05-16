@@ -32,6 +32,7 @@
 @media screen and (max-width: 768px) {
   .column {
     flex-basis: 50%;
+    padding: 10px;
   }
 }
 
@@ -39,6 +40,7 @@
   .column {
     flex-basis: 100%;
     text-align: center;
+    padding: 5px;
   }
 
   .listIcon {

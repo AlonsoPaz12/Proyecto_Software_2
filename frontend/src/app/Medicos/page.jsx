@@ -1,4 +1,5 @@
 'use client';
+
 import { React, useState } from "react";
 import TopBar from '@/components/TopBar/TopBar.jsx';
 import DoctorCard from '../../components/DoctorCard/DoctorCard.jsx';

@@ -1,0 +1,45 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pregunta {
+    color: #333; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+  
+.contenidoLista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100vh;
+}
+
+.contenidoOpcion {
+    display: flex;
+    border: 1px solid #cc1a1a; 
+    border-radius: 8px;
+    height: 8em;
+    margin: 8%; 
+    padding: 3%;
+}
+
+.icon {
+    padding: 0 6% 0 0;
+}
+
+@media (max-width: 768px) {
+    .contenidoOpcion {
+      width: 100%;
+    }
+    
+}

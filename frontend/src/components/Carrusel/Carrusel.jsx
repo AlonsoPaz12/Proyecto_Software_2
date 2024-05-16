@@ -1,3 +1,5 @@
+'use client';
+
 import Carousel from 'react-bootstrap/Carousel';
 import styles from './Carrusel.module.css'
 
