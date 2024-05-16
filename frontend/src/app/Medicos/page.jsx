@@ -1,9 +1,10 @@
 'use client';
-import React, { useState } from 'react';
+import { React, useState } from "react";
 import TopBar from '@/components/TopBar/TopBar.jsx';
 import DoctorCard from '../../components/DoctorCard/DoctorCard.jsx';
 import styles from './page.module.css';
 import Banner from '@/components/Banner/Banner.jsx';
+import Footer from '@/components/Footer/Footer.jsx';
 
 const VerMedicos = () => {
   
@@ -20,15 +21,18 @@ const VerMedicos = () => {
     <div className={styles.container}>
       
       <TopBar></TopBar>
+      
       <Banner pageTitle="NUESTROS MÉDICOS" parrafo="Contamos con los mejores profesionales para
-            cuidar de ti y tu familia. ¡Agenda una cita hoy
-            mismo!"></Banner>
+      cuidar de ti y tu familia. ¡Agenda una cita hoy
+      mismo!" imagen="/img/doctores2.png"/>
 
       <div className={styles.vistaMedicos}>  
         {filteredDoctors.map(doctor => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}
       </div>
+
+      <Footer/>
 
     </div>
   );
