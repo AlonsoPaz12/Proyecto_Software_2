@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from "./LeftBarButton.module.css";
-import { AiOutlineDeliveredProcedure } from "react-icons/ai";
 
-const LeftBarButton = () => {
+const LeftBarButton = ({texto, componente}) => {
   return (
     <div className={styles.container}>
-        <AiOutlineDeliveredProcedure />
-        <div style={{height: '100%', width: '5px'}}></div>
-        <span>Proximas Citas</span>
+        {componente}
+        <div style={{height: '100%', width: '10px'}}></div> {/*Espacio entre el logo y el texto*/} 
+        <span>{texto}</span>
     </div>
   );
 };
