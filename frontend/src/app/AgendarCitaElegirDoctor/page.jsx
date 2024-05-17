@@ -5,9 +5,9 @@ import styles from './page.module.css';
 import { RiArrowGoBackFill } from "react-icons/ri";
 import Button from 'react-bootstrap/Button';
 import { RiSkipRightLine } from "react-icons/ri";
+import FreeSoloCreateOption from "./../../components/SearchBar/SearchBar.jsx"
 
-const AgendarCitaEDoctores = () => {
-  
+const AgendarCitaEDoctores = () => { 
 
   return (
     <div className={styles.container}>
@@ -22,7 +22,11 @@ const AgendarCitaEDoctores = () => {
         </a>
       </div>
       <div className={styles.body}>
-        {/*Contenido aca*/}
+        <h3 style={{display: 'flex', justifyContent: 'center', height: '100px', alignItems: 'center'}}><b>AGENDAR CITA MÉDICA</b></h3>
+        <h5 style={{paddingLeft: '90px', marginBottom: '20px'}}><b>Nuestros Médicos</b></h5>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          <FreeSoloCreateOption/>
+        </div>
       </div>
       <div className={styles.footer}>
         <Button variant="secondary" style={{borderRadius: '10px', width: '250px'}}> 
