@@ -1,21 +1,23 @@
 'use client';
 
 import React from "react";
-import TopBar from '@/components/TopBar/TopBar.jsx';
 import styles from './page.module.css';
+import TopBar from '@/components/TopBar/TopBar.jsx';
 import Banner from '@/components/Banner/Banner.jsx';
 import Footer from '@/components/Footer/Footer.jsx';
 import Especialidad from "@/components/Especialidad/Especialidad.jsx";
+import { BsFillHeartPulseFill } from "react-icons/bs";
+import { GiHandBandage } from "react-icons/gi";
+import { LuBaby } from "react-icons/lu";
 
 const Especialidades = () => {
   const especialidadesMedicas = [
-    { nombre: "Cardiología", icono: "/img/icono-cardiologia.png" },
-    { nombre: "Dermatología", icono: "/img/icono-dermatologia.png" },
-    { nombre: "Pediatría", icono: "/img/icono-pediatria.png" },
-    { nombre: "Cardiología", icono: "/img/icono-cardiologia.png" },
-    { nombre: "Dermatología", icono: "/img/icono-dermatologia.png" },
-    { nombre: "Pediatría", icono: "/img/icono-pediatria.png" },
-    // Agrega más especialidades según sea necesario
+    { nombre: "Cardiología", icono: <BsFillHeartPulseFill/>, color: "red" },
+    { nombre: "Dermatología", icono: <GiHandBandage />, color: "blue" },
+    { nombre: "Pediatría", icono: <LuBaby />, color: "green"},
+    { nombre: "Cardiología", icono: <BsFillHeartPulseFill/>, color: "red" },
+    { nombre: "Dermatología", icono: <GiHandBandage />, color: "blue" },
+    { nombre: "Pediatría", icono: <LuBaby />, color: "green"},
   ];
 
   return (
@@ -34,6 +36,7 @@ const Especialidades = () => {
             key={index}
             nombre={especialidad.nombre}
             icono={especialidad.icono}
+            color={especialidad.color}
           />
         ))}
       </div>
