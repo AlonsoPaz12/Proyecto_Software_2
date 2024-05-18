@@ -1,5 +1,5 @@
 {/*Componentes*/}
-import TopBar from "@/components/TopBar/TopBar.jsx";
+import ResponsiveAppBar from '@/components/ResponsiveAppBar/ResponsiveAppBar.jsx';
 import Footer from "@/components/Footer/Footer.jsx";
 import Carrusel from "@/components/Carrusel/Carrusel";
 import CustomLink from "@/components/CustomLink/CustomLink";
@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
 
-      <TopBar/>
+      <ResponsiveAppBar/>
 
-      <Carrusel imagen1={"/img/doctores2.png"} imagen2={"/img/doctores2.png"} imagen3={"/img/doctores2.png"}/>
+      <Carrusel imagen1={"/img/FondoBanner.png"} imagen2={"/img/FondoBanner.png"} imagen3={"/img/FondoBanner.png"}/>
 
       <div className={styles.banner}>
 

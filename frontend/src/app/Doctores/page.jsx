@@ -1,7 +1,7 @@
 'use client';
 
 import { React, useState } from "react";
-import TopBar from '@/components/TopBar/TopBar.jsx';
+import ResponsiveAppBar from '@/components/ResponsiveAppBar/ResponsiveAppBar.jsx';
 import DoctorCard from '../../components/DoctorCard/DoctorCard.jsx';
 import styles from './page.module.css';
 import Banner from '@/components/Banner/Banner.jsx';
@@ -13,7 +13,7 @@ const VerMedicos = () => {
     { id: 1, nombre: 'Dr. Juan Pérez', especialidad: 'Pediatría', imagen:'https://i.ibb.co/b6SDFTN/01.jpg'},
     { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
     { id: 3, nombre: 'Dra. Gianella Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    // Agrega más doctores según sea necesario
+
   ];
 
   const [filteredDoctors, setFilteredDoctors] = useState(doctors);
@@ -21,11 +21,12 @@ const VerMedicos = () => {
   return (
     <div className={styles.container}>
       
-      <TopBar></TopBar>
+      <ResponsiveAppBar/>
       
       <Banner pageTitle="NUESTROS MÉDICOS" parrafo="Contamos con los mejores profesionales para
       cuidar de ti y tu familia. ¡Agenda una cita hoy
       mismo!" imagen="/img/doctores2.png"/>
+
 
       <div className={styles.vistaMedicos}>  
         {filteredDoctors.map(doctor => (

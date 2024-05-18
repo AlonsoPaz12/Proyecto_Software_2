@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from './page.module.css';
-import TopBar from '@/components/TopBar/TopBar.jsx';
+import ResponsiveAppBar from '@/components/ResponsiveAppBar/ResponsiveAppBar.jsx';
 import Banner from '@/components/Banner/Banner.jsx';
 import Footer from '@/components/Footer/Footer.jsx';
 import Especialidad from "@/components/Especialidad/Especialidad.jsx";
@@ -22,7 +22,8 @@ const Especialidades = () => {
 
   return (
     <div className={styles.container}>
-      <TopBar />
+      <ResponsiveAppBar/>
+      
       <Banner
         pageTitle="NUESTRAS ESPECIALIDADES"
         parrafo="Descubre nuestra gama de especialidades médicas diseñadas para cuidar de ti de manera integral."
