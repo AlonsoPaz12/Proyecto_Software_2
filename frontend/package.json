@@ -9,13 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.17",
-
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@mui/material": "^5.15.18",
     "bootstrap": "^5.3.3",
     "next": "14.2.3",
     "react": "^18",

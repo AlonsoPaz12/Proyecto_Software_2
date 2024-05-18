@@ -1,0 +1,16 @@
+.especialidadItem {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 30px;
+    width: 50vh;
+}
+  
+.especialidadIcono {
+    width: 40px; 
+    margin-right: 10px;
+}
+  
+.especialidadNombre {
+    font-size: 18px; 
+}
