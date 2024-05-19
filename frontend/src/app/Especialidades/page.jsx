@@ -2,7 +2,6 @@
 
 import { React, useState } from "react";
 import styles from './page.module.css';
-import ResponsiveAppBar from '@/components/ResponsiveAppBar/ResponsiveAppBar.jsx';
 import Banner from '@/components/Banner/Banner.jsx';
 import Footer from '@/components/Footer/Footer.jsx';
 import Buscador from "@/components/Buscador/Buscador";
@@ -37,3 +36,4 @@ const Especialidades = () => {
 };
 
 export default Especialidades;
+
