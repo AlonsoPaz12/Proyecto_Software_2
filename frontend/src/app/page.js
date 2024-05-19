@@ -71,7 +71,7 @@ export default function Home() {
               <div className={styles.datos}>
                 Quiero ver mis imágenes médicas
                 <div>
-                  <CustomLink href={"/agendarCita"} text={"Ver más"}/>
+                  <CustomLink href={"/ImagenesMedicas"} text={"Ver más"}/>
                   <IoIosArrowDropright className={styles.verMas} size="2em" />
                 </div>  
               </div>
