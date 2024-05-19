@@ -6,6 +6,7 @@ import Banner from '@/components/Banner/Banner.jsx';
 import Footer from '@/components/Footer/Footer.jsx';
 import Buscador from "@/components/Buscador/Buscador";
 import ListaEspecialidades from "@/components/ListaEspecialidades/ListaEspecialidades";
+import ResponsiveAppBar from "@/components/ResponsiveAppBar/ResponsiveAppBar";
 
 const Especialidades = () => {
   const [inputText, setInputText] = useState("");
