@@ -18,7 +18,7 @@ import { MdEmail } from "react-icons/md";
 import Link from 'next/link';
 
 const pages = ['Nosotros', 'Especialidades', 'Doctores'];
-const settings = ['Iniciar Sesión', 'Cerrar Sesión'];
+const settings = ['Iniciar Sesión', 'Registtrarse'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -41,14 +41,14 @@ function ResponsiveAppBar() {
 
   return (
     <div>
-      <AppBar position="static" dis>
-        <Container maxWidth="xl"  sx={{ fontSize:'0.9em', color: '#00916E', backgroundColor: 'white',  display: { xs: 'none', md: 'flex' }, justifyContent: 'space-around' }}>
+      <AppBar position="static">
+        <Container maxWidth="100vh"  sx={{ fontSize:'0.9em', color: '#00916E', backgroundColor: 'white',  display: { xs: 'none', md: 'flex' }, justifyContent: 'space-around' }}>
           <span><FaPhoneAlt /> Teléfono: (123) 456-7890</span>
           <span><MdEmail /> info@medcontrol.com</span>
           <span><FaMapMarkerAlt /> Dirección: Avenida Principal 123, Lima, Perú</span>  
         </Container>
 
-        <Container maxWidth="xl"  sx={{ backgroundColor: '#00916E', height: '4.3rem' }}>
+        <Container maxWidth="100vh"  sx={{ backgroundColor: '#00916E', height: '4.3rem' }}>
           <Toolbar disableGutters>
             <HealingOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, fontSize: '2rem' }} />
             <Typography
@@ -61,9 +61,9 @@ function ResponsiveAppBar() {
                 display: { xs: 'none', md: 'flex' },
                 fontFamily: 'Staatliches, sans-serif',
                 fontWeight: 700,
-                letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
+                fontSize:'2em'
               }}
             >
               MedControl+
@@ -122,9 +122,10 @@ function ResponsiveAppBar() {
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
+                fontSize:'1.5em'
               }}
             >
-              MedControl+
+              MC+
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
@@ -165,7 +166,7 @@ function ResponsiveAppBar() {
               >
                 {settings.map((setting) => (
                   <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
+                    <Typography sx={{ color: '#00916E'}} textAlign="center">{setting}</Typography>
                   </MenuItem>
                 ))}
               </Menu>

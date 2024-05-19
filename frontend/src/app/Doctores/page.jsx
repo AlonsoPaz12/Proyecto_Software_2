@@ -2,21 +2,18 @@
 
 import { React, useState } from "react";
 import ResponsiveAppBar from '@/components/ResponsiveAppBar/ResponsiveAppBar.jsx';
-import DoctorCard from '../../components/DoctorCard/DoctorCard.jsx';
 import styles from './page.module.css';
 import Banner from '@/components/Banner/Banner.jsx';
 import Footer from '@/components/Footer/Footer.jsx';
+import Buscador from "@/components/Buscador/Buscador";
+import ListaDoctores from "@/components/ListaDoctores/ListaDoctores";
 
 const VerMedicos = () => {
-  
-  const doctors = [
-    { id: 1, nombre: 'Dr. Juan Pérez', especialidad: 'Pediatría', imagen:'https://i.ibb.co/b6SDFTN/01.jpg'},
-    { id: 2, nombre: 'Dra. María González', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
-    { id: 3, nombre: 'Dra. Gianella Carrion', especialidad: 'Dermatología', imagen:'https://i.ibb.co/b6SDFTN/01.jpg' },
+  const [inputText, setInputText] = useState("");
 
-  ];
-
-  const [filteredDoctors, setFilteredDoctors] = useState(doctors);
+  const handleSearchInputChange = (value) => {
+    setInputText(value);
+  };
 
   return (
     <div className={styles.container}>
@@ -27,12 +24,9 @@ const VerMedicos = () => {
       cuidar de ti y tu familia. ¡Agenda una cita hoy
       mismo!" imagen="/img/doctores2.png"/>
 
+      <Buscador onChange={handleSearchInputChange} label={"Buscar médico por nombre o especialidad"} />
 
-      <div className={styles.vistaMedicos}>  
-        {filteredDoctors.map(doctor => (
-          <DoctorCard key={doctor.id} doctor={doctor} />
-        ))}
-      </div>
+      <ListaDoctores input={inputText} />
 
       <Footer/>
 

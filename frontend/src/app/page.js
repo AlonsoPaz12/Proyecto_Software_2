@@ -12,12 +12,18 @@ import { IoIosArrowDropright } from "react-icons/io";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const imagenes = [
+    '/img/FondoBanner.png',
+    '/img/FondoBanner.png',
+    '/img/FondoBanner.png',
+  ];
+  
   return (
     <main className={styles.main}>
 
       <ResponsiveAppBar/>
 
-      <Carrusel imagen1={"/img/FondoBanner.png"} imagen2={"/img/FondoBanner.png"} imagen3={"/img/FondoBanner.png"}/>
+      <Carrusel images={imagenes} />
 
       <div className={styles.banner}>
 

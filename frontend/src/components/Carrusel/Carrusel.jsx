@@ -1,24 +1,15 @@
 'use client';
-
 import Carousel from 'react-bootstrap/Carousel';
-import styles from './Carrusel.module.css'
+import styles from './Carrusel.module.css';
 
-const Carrusel = ({imagen1, imagen2, imagen3}) => {
+const Carrusel = ({ images }) => {
   return (
     <Carousel className={styles.contenido}>
-
-      <Carousel.Item interval={3000}>
-        <img src={imagen1} className={`d-block ${styles.carouselImagen}`} alt="First slide" />
-      </Carousel.Item>
-
-      <Carousel.Item interval={3000}>
-        <img src={imagen2} className={`d-block ${styles.carouselImagen}`} alt="Second slide" />
-      </Carousel.Item>
-
-      <Carousel.Item interval={3000}>
-        <img src={imagen3} className={`d-block ${styles.carouselImagen}`} alt="Third slide" />
-      </Carousel.Item>
-
+      {images.map((image, index) => (
+        <Carousel.Item key={index} interval={3000}>
+          <img src={image} className={`d-block ${styles.carouselImagen}`} alt={`Slide ${index + 1}`} />
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }
