@@ -1,5 +1,5 @@
 {/*Componentes*/}
-import TopBar from "@/components/TopBar/TopBar.jsx";
+import ResponsiveAppBar from '@/components/ResponsiveAppBar/ResponsiveAppBar.jsx';
 import Footer from "@/components/Footer/Footer.jsx";
 import Carrusel from "@/components/Carrusel/Carrusel";
 import CustomLink from "@/components/CustomLink/CustomLink";
@@ -12,12 +12,18 @@ import { IoIosArrowDropright } from "react-icons/io";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const imagenes = [
+    '/img/FondoBanner.png',
+    '/img/FondoBanner.png',
+    '/img/FondoBanner.png',
+  ];
+  
   return (
     <main className={styles.main}>
 
-      <TopBar/>
+      <ResponsiveAppBar/>
 
-      <Carrusel imagen1={"/img/doctores2.png"} imagen2={"/img/doctores2.png"} imagen3={"/img/doctores2.png"}/>
+      <Carrusel images={imagenes} />
 
       <div className={styles.banner}>
 
@@ -71,7 +77,7 @@ export default function Home() {
               <div className={styles.datos}>
                 Quiero ver mis imágenes médicas
                 <div>
-                  <CustomLink href={"/agendarCita"} text={"Ver más"}/>
+                  <CustomLink href={"/ImagenesMedicas"} text={"Ver más"}/>
                   <IoIosArrowDropright className={styles.verMas} size="2em" />
                 </div>  
               </div>

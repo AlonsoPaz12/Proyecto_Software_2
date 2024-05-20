@@ -5,7 +5,7 @@
 .especialidadesContainer {
   display: flex;
   justify-items: center;
-  padding: 50px;
+  padding: 30px;
   justify-content: center;
   flex-wrap: wrap;
 }
