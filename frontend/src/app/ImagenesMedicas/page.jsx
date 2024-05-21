@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import LeftBar from '@/components/LeftBar/LeftBar';
-import Button from 'react-bootstrap/Button';
 import ProfileCard from '@/components/ProfileCard/ProfileCard';
 import ImagenesCard from '@/components/ImagenesCard/ImagenesCard';
 
@@ -25,9 +24,6 @@ const ImagenesMedicas = () => {
           <ImagenesCard/>
           <ImagenesCard/>
           <ImagenesCard/>
-        </div>
-        <div className={styles.footer}>
-          <Button variant="dark" className={styles.agregarImagen}>Agendar imágenes</Button>
         </div>
       </div>
     </div>
