@@ -4,11 +4,11 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 
 const filter = createFilterOptions();
 
-export default function FreeSoloCreateOption() {
+export default function SearchBar() {
   const [value, setValue] = React.useState(null);
 
   return (
-    <Autocomplete style={{width: '1700px'}}
+    <Autocomplete style={{width: '100%'}}
       value={value}
       onChange={(event, newValue) => {
         if (typeof newValue === 'string') {
@@ -60,7 +60,7 @@ export default function FreeSoloCreateOption() {
       sx={{ width: 300 }}
       freeSolod
       renderInput={(params) => (
-        <TextField {...params} label="Buscar por nombre de médico o especialidad" style={{width: '1700px'}}
+        <TextField {...params} label="Buscar por nombre de médico o especialidad" style={{width: '100%'}}
         sx={{
             width: '1700px',
             '& .MuiOutlinedInput-root': {
